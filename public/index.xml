@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code@graoully</title>
+    <link>https://code.graoully.fr/</link>
+    <description>Recent content on code@graoully</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 28 Oct 2020 11:28:44 +0100</lastBuildDate>
+    
+	<atom:link href="https://code.graoully.fr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sec101_synthese_conference_usenix_enigma_2016</title>
+      <link>https://code.graoully.fr/security/sec101_synthese_conference_usenix_enigma_2016/</link>
+      <pubDate>Wed, 28 Oct 2020 11:28:44 +0100</pubDate>
+      
+      <guid>https://code.graoully.fr/security/sec101_synthese_conference_usenix_enigma_2016/</guid>
+      <description>Organisation d’une attaque On dénombre six phases lors d’une attaque.
+Reconnaissance  Par source ouverte ; Par ingénierie sociale ; En attente d’une opportunité, d’une erreur de stratégie de la défense.  Attaque initiale  Exploiter une faille technique : CVE, zero-day, Injection SQL ; Exploiter une faille humaine : Phishing, usurpation d’identité par téléphone par exemple, website infecté, clef USB infecté…  Persistance de l’attaque Pouvoir accéder au réseau après l’intrusion, quand l’attaquant le souhaite ou selon son besoin.</description>
+    </item>
+    
+    <item>
+      <title>Sec101_analyse_risque</title>
+      <link>https://code.graoully.fr/security/sec101_analyse_risque/</link>
+      <pubDate>Wed, 28 Oct 2020 11:25:18 +0100</pubDate>
+      
+      <guid>https://code.graoully.fr/security/sec101_analyse_risque/</guid>
+      <description>Définition Risque : danger éventuel plus ou moins prévisible. Analyse : opération intellectuelle consistant à décomposer un tout en ses éléments et d’en établir les relations.
+Objectif  Quoi protéger ? Contre quoi ? contre qui ? A quel prix ? Quel moyen ? Quel stratégie ?  Les actuers de l&amp;rsquo;analyse de risque  conduit par une équipe spécialisé dont on distingue les rôles, objectifs/finalité, périmètre, contexte, contraintes, à ressource contrainte; En mode projet  </description>
+    </item>
+    
+    <item>
+      <title>ACID et DICT</title>
+      <link>https://code.graoully.fr/security/acid_pictan/</link>
+      <pubDate>Tue, 27 Oct 2020 09:47:20 +0100</pubDate>
+      
+      <guid>https://code.graoully.fr/security/acid_pictan/</guid>
+      <description>ACID PICT-AN ACID  A: Authentification C: Confidentialité I: Intégrité D: Disponibilité  DICT  D: Disponibilité des données I: Intégrité C: Coonfidentialité T: Tracabilité A: Authenticité N: Non Répugnation  </description>
+    </item>
+    
+    <item>
+      <title>Squid et squid guard</title>
+      <link>https://code.graoully.fr/network/squid/</link>
+      <pubDate>Wed, 01 Apr 2020 09:00:00 +0000</pubDate>
+      
+      <guid>https://code.graoully.fr/network/squid/</guid>
+      <description>sudo yum install squidGuard
+cd /var/squidGuard rm blacklists.tar.gz wget -c ftp://ftp.ut-capitole.fr/blacklist/blacklists.tar.gz tar xvzf blacklists.tar.gz cd blacklists /etc/squid/squid.conf
+# SquidGuard url_rewrite_program /usr/bin/squidGuard url_rewrite_children 8 sudo chown -R squid:squid /var/squidGuard sudo chown -R squid:squid /var/log/squidGuard</description>
+    </item>
+    
+    <item>
+      <title>Système</title>
+      <link>https://code.graoully.fr/operating_system/utc502_generalites_systeme/</link>
+      <pubDate>Sun, 01 Dec 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://code.graoully.fr/operating_system/utc502_generalites_systeme/</guid>
+      <description>Définition  gère ressources matérielles avec les pilotes de périphérique; Gestion du système de fichiers; Interface entre les applications et le materiel; Gestion des processus:   Shell (Text User Interface) -&amp;gt; fils -&amp;gt; &amp;ldquo;ls -l&amp;rdquo;  Modes  Utilisateur: quelques commandes seulement Noyau: toutes les commandes sont exécutables par l&amp;rsquo;OS  Shéma  Application système d&amp;rsquo;exploitation Pilotes de périphérique Materiel  Pyramides des mémoires  Registre Cache RAM EPROM BIOS HDD Bandes magnétiques  Bases  Pipeline / registre A chaque changement d&amp;rsquo;application l&amp;rsquo;état du registre est sauvegarder le registre Process State Word contient cette information ainsi que le mode d&amp;rsquo;éxécution de l&amp;rsquo;OS SPOOL: Simultaneous peripheral operation OnLine: file d&amp;rsquo;attente des périphérique  Utilisateurs  accès au systèmes selon des droit super utilisateur pour des droits spéciaux UID GID  Fichiers  descripteur de fichier: entier permettant de manipuler / opérer dur un fichier Fichiers spéciaux : périphérique comme un fichierQ mode bloc : disque mode caractere: imprimante / modem : flux de caractere dans /dev/  Appel système  lecture écriture sur fichier ajout / suppression de fichier  Processus  C&amp;rsquo;est une instance d&amp;rsquo;un programme; l&amp;rsquo;OS alloue de la ressource virtuelle: du CPU et de la mémoire virtuelle pour être indépendant du materiel; Concept permettant le pseudo paralellisme: P1 -&amp;gt; P2 -&amp;gt; P3 -&amp;gt; P1 Herite de l&amp;rsquo;UID; Les processus enfants communiquent via une table: c&amp;rsquo;est la communication interprocessus; peuvent partagé leur mémoire virtuelle;  Thread  Les threads sont des processus léger, des flux d&amp;rsquo;application; Font partis d&amp;rsquo;un processus; Partage les ressources du processus;  informations d&amp;rsquo;un processus  mémoire virtuelle contexte d&amp;rsquo;execution (addresse de la prochaine instruction etc&amp;hellip;) état: idle, execution, bloqué liste de ressources (fichiers, périphériques&amp;hellip;) utilisateur (droits)  mémoire virtuelle    Mémoire virtuelle      Code    Variables    Pile - Stack stock les paramètres d&amp;rsquo;entré d&amp;rsquo;une fonction    résultat    adresse de retour de la fonction précédente    variables locales   Tas - Heap allocation dynamique de mémoire             permet d&amp;rsquo;allouer plus de mémoire que la mémoire physique adressage virtuel implémentation: pagination:unité de taille fixe     page virtuelle cadre mémoire physique droit d&amp;rsquo;accès           Système de fichiers Materiel Un disque se décompose comme suit:</description>
+    </item>
+    
+    <item>
+      <title>Paradigme de programmation</title>
+      <link>https://code.graoully.fr/developpement/utc503_generalites_developpement/</link>
+      <pubDate>Fri, 01 Nov 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://code.graoully.fr/developpement/utc503_generalites_developpement/</guid>
+      <description>Paradigme (modèle) de programmation  La programmation impérative  la séquence d&amp;rsquo;instructions L&amp;rsquo;assignation ou affectation L&amp;rsquo;instruction conditionnelle La boucle Les branchements   Programmation orientée objet  Encapsulation Héritage (généralisation) Polymorphisme, redéfinition, Upcasting et surcharge Classe abstraite Les génériques Patron de conception «design pattern»   Programmation déclarative Programmation descriptive Programmation fonctionnelle  Fonction pure Transparence référentielle Immutabilité Assignation de fonction en TypeScript  Fonction Lambda   Fonction d’ordre supérieur La «closure» ou fermeture La curryfication L’application partielle La récursion Recherche et transformation de listes   Programmation logique  Programmer en Prolog, c’est : Applications: Faits Règles : Faits : 1ère base de connaissance Interrogations Des règles Termes      Un langage est une notation conventionnelle destinée à formuler des algorithmes: Il s&amp;rsquo;agit d&amp;rsquo;un vocabulaire et de règles de grammaire.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://code.graoully.fr/network/utc505_generalites_reseau/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://code.graoully.fr/network/utc505_generalites_reseau/</guid>
+      <description>Modele OSI    OSI TCP/IP     Application Processus utilisateur   Presentation Processus utilisateur   Session Processus utilisateur   Transport TCP / UDP   Réseau IP   Liaison LLC: Logical Link Control MAC: Medium Access Control PSS: Physical Signaling Sublaye   Physique     La couche Physique Un signal est transporté par une onde porteuse variant en: s(t) = A sin(wt+o) et en utilisant différente type de modulation;</description>
+    </item>
+    
+  </channel>
+</rss>

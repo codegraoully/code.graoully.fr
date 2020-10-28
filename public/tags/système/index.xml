@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Système on code@graoully</title>
+    <link>https://code.graoully.fr/tags/syst%C3%A8me/</link>
+    <description>Recent content in Système on code@graoully</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 01 Dec 2019 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://code.graoully.fr/tags/syst%C3%A8me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Système</title>
+      <link>https://code.graoully.fr/operating_system/utc502_generalites_systeme/</link>
+      <pubDate>Sun, 01 Dec 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://code.graoully.fr/operating_system/utc502_generalites_systeme/</guid>
+      <description>Définition  gère ressources matérielles avec les pilotes de périphérique; Gestion du système de fichiers; Interface entre les applications et le materiel; Gestion des processus:   Shell (Text User Interface) -&amp;gt; fils -&amp;gt; &amp;ldquo;ls -l&amp;rdquo;  Modes  Utilisateur: quelques commandes seulement Noyau: toutes les commandes sont exécutables par l&amp;rsquo;OS  Shéma  Application système d&amp;rsquo;exploitation Pilotes de périphérique Materiel  Pyramides des mémoires  Registre Cache RAM EPROM BIOS HDD Bandes magnétiques  Bases  Pipeline / registre A chaque changement d&amp;rsquo;application l&amp;rsquo;état du registre est sauvegarder le registre Process State Word contient cette information ainsi que le mode d&amp;rsquo;éxécution de l&amp;rsquo;OS SPOOL: Simultaneous peripheral operation OnLine: file d&amp;rsquo;attente des périphérique  Utilisateurs  accès au systèmes selon des droit super utilisateur pour des droits spéciaux UID GID  Fichiers  descripteur de fichier: entier permettant de manipuler / opérer dur un fichier Fichiers spéciaux : périphérique comme un fichierQ mode bloc : disque mode caractere: imprimante / modem : flux de caractere dans /dev/  Appel système  lecture écriture sur fichier ajout / suppression de fichier  Processus  C&amp;rsquo;est une instance d&amp;rsquo;un programme; l&amp;rsquo;OS alloue de la ressource virtuelle: du CPU et de la mémoire virtuelle pour être indépendant du materiel; Concept permettant le pseudo paralellisme: P1 -&amp;gt; P2 -&amp;gt; P3 -&amp;gt; P1 Herite de l&amp;rsquo;UID; Les processus enfants communiquent via une table: c&amp;rsquo;est la communication interprocessus; peuvent partagé leur mémoire virtuelle;  Thread  Les threads sont des processus léger, des flux d&amp;rsquo;application; Font partis d&amp;rsquo;un processus; Partage les ressources du processus;  informations d&amp;rsquo;un processus  mémoire virtuelle contexte d&amp;rsquo;execution (addresse de la prochaine instruction etc&amp;hellip;) état: idle, execution, bloqué liste de ressources (fichiers, périphériques&amp;hellip;) utilisateur (droits)  mémoire virtuelle    Mémoire virtuelle      Code    Variables    Pile - Stack stock les paramètres d&amp;rsquo;entré d&amp;rsquo;une fonction    résultat    adresse de retour de la fonction précédente    variables locales   Tas - Heap allocation dynamique de mémoire             permet d&amp;rsquo;allouer plus de mémoire que la mémoire physique adressage virtuel implémentation: pagination:unité de taille fixe     page virtuelle cadre mémoire physique droit d&amp;rsquo;accès           Système de fichiers Materiel Un disque se décompose comme suit:</description>
+    </item>
+    
+  </channel>
+</rss>

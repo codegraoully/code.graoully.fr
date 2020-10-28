@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Organisation d’une attaque On dénombre six phases lors d’une attaque.
+Reconnaissance  Par source ouverte ; Par ingénierie sociale ; En attente d’une opportunité, d’une erreur de stratégie de la défense.  Attaque initiale  Exploiter une faille technique : CVE, zero-day, Injection SQL ; Exploiter une faille humaine : Phishing, usurpation d’identité par téléphone par exemple, website infecté, clef USB infecté…  Persistance de l’attaque Pouvoir accéder au réseau après l’intrusion, quand l’attaquant le souhaite ou selon son besoin." />
+<meta name="keywords" content=", sécurité, conférence, cyber" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://code.graoully.fr/security/sec101_synthese_conference_usenix_enigma_2016/" />
+
+
+    <title>
+        
+            Sec101_synthese_conference_usenix_enigma_2016 :: code@graoully 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css"> 
+
+
+
+
+<link rel="stylesheet" href="/main.25c8a703940c0e6c02b3f11573b1672a008b3dfc61418061f90b8d487d45e9a5.css">
+
+
+  
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Sec101_synthese_conference_usenix_enigma_2016">
+<meta itemprop="description" content="Organisation d’une attaque On dénombre six phases lors d’une attaque.
+Reconnaissance  Par source ouverte ; Par ingénierie sociale ; En attente d’une opportunité, d’une erreur de stratégie de la défense.  Attaque initiale  Exploiter une faille technique : CVE, zero-day, Injection SQL ; Exploiter une faille humaine : Phishing, usurpation d’identité par téléphone par exemple, website infecté, clef USB infecté…  Persistance de l’attaque Pouvoir accéder au réseau après l’intrusion, quand l’attaquant le souhaite ou selon son besoin.">
+<meta itemprop="datePublished" content="2020-10-28T11:28:44&#43;01:00" />
+<meta itemprop="dateModified" content="2020-10-28T11:28:44&#43;01:00" />
+<meta itemprop="wordCount" content="397">
+
+
+
+<meta itemprop="keywords" content="sécurité,conférence,cyber," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Sec101_synthese_conference_usenix_enigma_2016"/>
+<meta name="twitter:description" content="Organisation d’une attaque On dénombre six phases lors d’une attaque.
+Reconnaissance  Par source ouverte ; Par ingénierie sociale ; En attente d’une opportunité, d’une erreur de stratégie de la défense.  Attaque initiale  Exploiter une faille technique : CVE, zero-day, Injection SQL ; Exploiter une faille humaine : Phishing, usurpation d’identité par téléphone par exemple, website infecté, clef USB infecté…  Persistance de l’attaque Pouvoir accéder au réseau après l’intrusion, quand l’attaquant le souhaite ou selon son besoin."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-10-28 11:28:44 &#43;0100 CET" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://code.graoully.fr/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">code@graoully</span>
+            <span class="logo__text"></span>
+            $<span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://code.graoully.fr/timeline">Timeline</a></li><li><a href="https://code.graoully.fr/developpement">Dev</a></li><li><a href="https://code.graoully.fr/operating_system">Sys</a></li><li><a href="https://code.graoully.fr/security">Secu</a></li><li><a href="https://code.graoully.fr/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+             
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post"> 
+
+        <article>
+            <h2 class="post-title"><a href="https://code.graoully.fr/security/sec101_synthese_conference_usenix_enigma_2016/">Sec101_synthese_conference_usenix_enigma_2016</a></h2>
+
+            
+
+            <div class="post-content">
+                <h2 id="organisation-dune-attaque">Organisation d’une attaque</h2>
+<p>On dénombre six phases lors d’une attaque.</p>
+<h3 id="reconnaissance">Reconnaissance</h3>
+<ul>
+<li>Par source ouverte ;</li>
+<li>Par ingénierie sociale ;</li>
+<li>En attente d’une opportunité, d’une erreur de stratégie de la défense.</li>
+</ul>
+<h3 id="attaque-initiale">Attaque initiale</h3>
+<ul>
+<li>Exploiter une faille technique : CVE, zero-day, Injection SQL ;</li>
+<li>Exploiter une faille humaine : Phishing, usurpation d’identité par téléphone par exemple, website infecté, clef USB infecté…</li>
+</ul>
+<h3 id="persistance-de-lattaque">Persistance de l’attaque</h3>
+<p>Pouvoir accéder au réseau après l’intrusion, quand l’attaquant le souhaite ou selon son besoin.</p>
+<h3 id="installation-doutils">Installation d’outils</h3>
+<p>Installation de portes dérobées ou d’un troyen par exemple.</p>
+<h3 id="translater-lattaque-sur-le-réseau">Translater l’attaque sur le réseau</h3>
+<p>Se déplacer sur le réseau c’est déplacé l’attaque sur celui-ci, contaminé d’autres machines, pour masquer le maillon faible, pour masquer le point d’entré sur le réseau. Cela permet de rester discret et en cas de découverte de garder un accès.</p>
+<h3 id="collecter-sexfiltrer-et-exploiter-les-résultats">Collecter, s ‘exfiltrer et exploiter les résultats</h3>
+<p>Une attaque discrète est une attaque réussie, dans le cas d’extraction, soit de vol de données par exemple, permettant d’exploiter le résultat sans lever le doute de la cible.</p>
+<h2 id="différente-type-dattaques-et-de-menaces">Différente type d’attaques et de menaces</h2>
+<p>Il faut prendre en compte différents menaces et types d’attaques :</p>
+<ul>
+<li>Gouvernementales : vol de données, ou encore intrusion persistante sur des systèmes expert (centrales nucléaires iraniennes)</li>
+<li>Cyber délinquance : attaques plutôt axées sur la destruction ou le chiffrement de donnée contre rançon.</li>
+</ul>
+<h2 id="les-solutions">Les solutions</h2>
+<ol>
+<li>Connaitre son réseau en profondeur pour mieux le protéger ;</li>
+<li>Réduire la surface d’attaque en limitant les logiciels installés ;</li>
+<li>Connaitre et approuver les logiciels que l’on installe ;</li>
+<li>Effectuer des tests d’intrusions ;</li>
+<li>Corriger TOUTES les failles découvertes, sans sous-estimer celles qui ne semblent pas importantes ;</li>
+<li>Choisir les équipements de confiance : téléphone mobiles, tablette, équipement d’infrastructure ;</li>
+<li>Employer les bonnes pratiques de sécurité :
+<ol>
+<li>Double facteur d’authentification ;</li>
+<li>Établir une politique de sécurité ;</li>
+<li>Limiter les droits des utilisateurs à leurs stricts nécessaires ;</li>
+<li>Segmenter le réseau ;</li>
+<li>Utilisation de liste autorisé / interdite (whiteliste / blackliste) ;</li>
+<li>Journaliser, monitorer puis consulter les journaux ;</li>
+</ol>
+</li>
+<li>Utilisation de systèmes de réputation de services / logiciels ;</li>
+<li>Plan de sauvegarde des données en cas de tentative de destruction ;</li>
+</ol>
+<p>Ces solutions sont applicables en fonctions de ce que l’on veut protéger et contre qui on veut le faire. En effet il y a peu de chance de constater une attaque persistante chez un particulier qui n’est pas dans une entreprise cible / importante / gouvernementale par exemple.</p>
+ 
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://code.graoully.fr/tags/s%C3%A9curit%C3%A9">sécurité</a></span><span class="tag"><a href="https://code.graoully.fr/tags/conf%C3%A9rence">conférence</a></span><span class="tag"><a href="https://code.graoully.fr/tags/cyber">cyber</a></span>
+  				</p>
+
+             
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+             
+        </div>
+    </div> 
+</footer>
+<script type="text/javascript">
+    $(function(){
+
+  window.sr = ScrollReveal();
+
+  if ($(window).width() < 768) {
+
+    if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+        $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+    }
+
+    sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+  } else {
+    
+    sr.reveal('.js--fadeInLeft', {
+        origin: 'left',
+        distance: '300px',
+          easing: 'ease-in-out',
+        duration: 800,
+      });
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+  }
+  
+  sr.reveal('.js--fadeInLeft', {
+        origin: 'left',
+        distance: '300px',
+          easing: 'ease-in-out',
+        duration: 800,
+      });
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+
+});
+
+</script>
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>risque on code@graoully</title>
+    <link>https://code.graoully.fr/tags/risque/</link>
+    <description>Recent content in risque on code@graoully</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 28 Oct 2020 11:25:18 +0100</lastBuildDate>
+    
+	<atom:link href="https://code.graoully.fr/tags/risque/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sec101_analyse_risque</title>
+      <link>https://code.graoully.fr/security/sec101_analyse_risque/</link>
+      <pubDate>Wed, 28 Oct 2020 11:25:18 +0100</pubDate>
+      
+      <guid>https://code.graoully.fr/security/sec101_analyse_risque/</guid>
+      <description>Définition Risque : danger éventuel plus ou moins prévisible. Analyse : opération intellectuelle consistant à décomposer un tout en ses éléments et d’en établir les relations.
+Objectif  Quoi protéger ? Contre quoi ? contre qui ? A quel prix ? Quel moyen ? Quel stratégie ?  Les actuers de l&amp;rsquo;analyse de risque  conduit par une équipe spécialisé dont on distingue les rôles, objectifs/finalité, périmètre, contexte, contraintes, à ressource contrainte; En mode projet  </description>
+    </item>
+    
+  </channel>
+</rss>

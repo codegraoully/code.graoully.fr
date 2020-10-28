@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Paradigme (modèle) de programmation  La programmation impérative  la séquence d&amp;rsquo;instructions L&amp;rsquo;assignation ou affectation L&amp;rsquo;instruction conditionnelle La boucle Les branchements   Programmation orientée objet  Encapsulation Héritage (généralisation) Polymorphisme, redéfinition, Upcasting et surcharge Classe abstraite Les génériques Patron de conception «design pattern»   Programmation déclarative Programmation descriptive Programmation fonctionnelle  Fonction pure Transparence référentielle Immutabilité Assignation de fonction en TypeScript  Fonction Lambda   Fonction d’ordre supérieur La «closure» ou fermeture La curryfication L’application partielle La récursion Recherche et transformation de listes   Programmation logique  Programmer en Prolog, c’est : Applications: Faits Règles : Faits : 1ère base de connaissance Interrogations Des règles Termes      Un langage est une notation conventionnelle destinée à formuler des algorithmes: Il s&amp;rsquo;agit d&amp;rsquo;un vocabulaire et de règles de grammaire." />
+<meta name="keywords" content=", dev, paradigme, programmation, developpement" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://code.graoully.fr/developpement/utc503_generalites_developpement/" />
+
+
+    <title>
+        
+            Paradigme de programmation :: code@graoully 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css"> 
+
+
+
+
+<link rel="stylesheet" href="/main.25c8a703940c0e6c02b3f11573b1672a008b3dfc61418061f90b8d487d45e9a5.css">
+
+
+  
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#252627">
+    <meta name="theme-color" content="#252627">
+
+
+
+<meta itemprop="name" content="Paradigme de programmation">
+<meta itemprop="description" content="Paradigme (modèle) de programmation  La programmation impérative  la séquence d&rsquo;instructions L&rsquo;assignation ou affectation L&rsquo;instruction conditionnelle La boucle Les branchements   Programmation orientée objet  Encapsulation Héritage (généralisation) Polymorphisme, redéfinition, Upcasting et surcharge Classe abstraite Les génériques Patron de conception «design pattern»   Programmation déclarative Programmation descriptive Programmation fonctionnelle  Fonction pure Transparence référentielle Immutabilité Assignation de fonction en TypeScript  Fonction Lambda   Fonction d’ordre supérieur La «closure» ou fermeture La curryfication L’application partielle La récursion Recherche et transformation de listes   Programmation logique  Programmer en Prolog, c’est : Applications: Faits Règles : Faits : 1ère base de connaissance Interrogations Des règles Termes      Un langage est une notation conventionnelle destinée à formuler des algorithmes: Il s&rsquo;agit d&rsquo;un vocabulaire et de règles de grammaire.">
+<meta itemprop="datePublished" content="2019-11-01T09:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-11-01T09:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="3015">
+
+
+
+<meta itemprop="keywords" content="dev,paradigme,programmation,developpement," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Paradigme de programmation"/>
+<meta name="twitter:description" content="Paradigme (modèle) de programmation  La programmation impérative  la séquence d&rsquo;instructions L&rsquo;assignation ou affectation L&rsquo;instruction conditionnelle La boucle Les branchements   Programmation orientée objet  Encapsulation Héritage (généralisation) Polymorphisme, redéfinition, Upcasting et surcharge Classe abstraite Les génériques Patron de conception «design pattern»   Programmation déclarative Programmation descriptive Programmation fonctionnelle  Fonction pure Transparence référentielle Immutabilité Assignation de fonction en TypeScript  Fonction Lambda   Fonction d’ordre supérieur La «closure» ou fermeture La curryfication L’application partielle La récursion Recherche et transformation de listes   Programmation logique  Programmer en Prolog, c’est : Applications: Faits Règles : Faits : 1ère base de connaissance Interrogations Des règles Termes      Un langage est une notation conventionnelle destinée à formuler des algorithmes: Il s&rsquo;agit d&rsquo;un vocabulaire et de règles de grammaire."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2019-11-01 09:00:00 &#43;0000 &#43;0000" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://code.graoully.fr/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">code@graoully</span>
+            <span class="logo__text"></span>
+            $<span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://code.graoully.fr/timeline">Timeline</a></li><li><a href="https://code.graoully.fr/developpement">Dev</a></li><li><a href="https://code.graoully.fr/operating_system">Sys</a></li><li><a href="https://code.graoully.fr/security">Secu</a></li><li><a href="https://code.graoully.fr/about">About</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+             
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post"> 
+
+        <article>
+            <h2 class="post-title"><a href="https://code.graoully.fr/developpement/utc503_generalites_developpement/">Paradigme de programmation</a></h2>
+
+            
+
+            <div class="post-content">
+                <ul>
+<li><a href="#paradigme-mod%c3%a8le-de-programmation">Paradigme (modèle) de programmation</a>
+<ul>
+<li><a href="#la-programmation-imp%c3%a9rative">La programmation impérative</a>
+<ul>
+<li><a href="#la-s%c3%a9quence-dinstructions">la séquence d&rsquo;instructions</a></li>
+<li><a href="#lassignation-ou-affectation">L&rsquo;assignation ou affectation</a></li>
+<li><a href="#linstruction-conditionnelle">L&rsquo;instruction conditionnelle</a></li>
+<li><a href="#la-boucle">La boucle</a></li>
+<li><a href="#les-branchements">Les branchements</a></li>
+</ul>
+</li>
+<li><a href="#programmation-orient%c3%a9e-objet">Programmation orientée objet</a>
+<ul>
+<li><a href="#encapsulation">Encapsulation</a></li>
+<li><a href="#h%c3%a9ritage-g%c3%a9n%c3%a9ralisation">Héritage (généralisation)</a></li>
+<li><a href="#polymorphisme-red%c3%a9finition-upcasting-et-surcharge">Polymorphisme, redéfinition, Upcasting et surcharge</a></li>
+<li><a href="#classe-abstraite">Classe abstraite</a></li>
+<li><a href="#les-g%c3%a9n%c3%a9riques">Les génériques</a></li>
+<li><a href="#patron-de-conception-%c2%abdesign-pattern%c2%bb">Patron de conception «design pattern»</a></li>
+</ul>
+</li>
+<li><a href="#programmation-d%c3%a9clarative">Programmation déclarative</a></li>
+<li><a href="#programmation-descriptive">Programmation descriptive</a></li>
+<li><a href="#programmation-fonctionnelle">Programmation fonctionnelle</a>
+<ul>
+<li><a href="#fonction-pure">Fonction pure</a></li>
+<li><a href="#transparence-r%c3%a9f%c3%a9rentielle">Transparence référentielle</a></li>
+<li><a href="#immutabilit%c3%a9">Immutabilité</a></li>
+<li><a href="#assignation-de-fonction-en-typescript">Assignation de fonction en TypeScript</a>
+<ul>
+<li><a href="#fonction-lambda">Fonction Lambda</a></li>
+</ul>
+</li>
+<li><a href="#fonction-dordre-sup%c3%a9rieur">Fonction d’ordre supérieur</a></li>
+<li><a href="#la-%c2%abclosure%c2%bb-ou-fermeture">La «closure» ou fermeture</a></li>
+<li><a href="#la-curryfication">La curryfication</a></li>
+<li><a href="#lapplication-partielle">L’application partielle</a></li>
+<li><a href="#la-r%c3%a9cursion">La récursion</a></li>
+<li><a href="#recherche-et-transformation-de-listes">Recherche et transformation de listes</a></li>
+</ul>
+</li>
+<li><a href="#programmation-logique">Programmation logique</a>
+<ul>
+<li><a href="#programmer-en-prolog-cest">Programmer en Prolog, c’est :</a></li>
+<li><a href="#applications">Applications:</a></li>
+<li><a href="#faits">Faits</a></li>
+<li><a href="#r%c3%a8gles">Règles :</a></li>
+<li><a href="#faits--1%c3%a8re-base-de-connaissance">Faits : 1ère base de connaissance</a></li>
+<li><a href="#interrogations">Interrogations</a></li>
+<li><a href="#des-r%c3%a8gles">Des règles</a></li>
+<li><a href="#termes">Termes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Un langage est une notation conventionnelle destinée à formuler des algorithmes: Il s&rsquo;agit d&rsquo;un vocabulaire et de règles de grammaire.
+Le paradigme est une représentation du monde par le biais d&rsquo;un modèle cohérent. Il permet de répondre à des problèmes types.</p>
+<p>Le code est transformé pour être:</p>
+<ul>
+<li>Interprétation / Interpréteur;</li>
+<li>Compilation / Compilateur;</li>
+<li>Bytecode.</li>
+</ul>
+<h2 id="la-programmation-impérative">La programmation impérative</h2>
+<ul>
+<li>Décrit les opérations en séquence d’instructions pour modifier l’état du programme;</li>
+<li>Introduit les concepts de procédures, structures de contrôle, et structures de données;</li>
+<li>Certainement le paradigme le plus ancien et le plus répandu dans les langages;</li>
+<li>Exemples de langages : Basic, Cobol, C, Javascript, Pascal, Perl, PHP, Python</li>
+</ul>
+<h4 id="la-séquence-dinstructions">la séquence d&rsquo;instructions</h4>
+<p>La machine va exécuter les instructions les unes après les autres dans l’ordre de lecture.
+Une instruction par ligne et/ou séparés par un ’;’.</p>
+<h4 id="lassignation-ou-affectation">L&rsquo;assignation ou affectation</h4>
+<p>Une assignation : <code>identifiant &lt;- expression</code> : Stocke dans la zone mémoire «pointée» par &ldquo;identifiant&rdquo; le résultat de l’exécution ou l&rsquo;évaluation de &ldquo;expression&rdquo;.</p>
+<h4 id="linstruction-conditionnelle">L&rsquo;instruction conditionnelle</h4>
+<ul>
+<li>Si condition est vraie alors exécute {instructions} : &ldquo;condition&rdquo; est une expression booléenne : vraie ou fausse, 0 ou 1.</li>
+<li>Si condition est vraie alors exécute {instructions A} sinon exécute {instructions B}.</li>
+</ul>
+<h4 id="la-boucle">La boucle</h4>
+<p>Répète N fois {instructions}.
+La «boucle for» permet d’exécuter un nombre prédéfini d’itérations exécutant les instructions.
+Elle se définit par quatre blocs : initialisation, condition de sortie de boucle, code évolution boucle, instructions à exécuter à chaque boucle.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> compteur <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; compteur <span style="color:#f92672">&lt;</span> maximum; compteur <span style="color:#f92672">=</span> compteur <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>){
+faitUnTruc();
+}
+</code></pre></div><h4 id="les-branchements">Les branchements</h4>
+<p>Permettent à la séquence d’instructions d’être déroutée vers un autre endroit du programme de deux manières:</p>
+<ul>
+<li>goto</li>
+<li>appel de fonctions</li>
+</ul>
+<hr>
+<h2 id="programmation-orientée-objet">Programmation orientée objet</h2>
+<ul>
+<li>Consiste à définir et assembler des briques logicielles appelées objets communiquant entre eux par messages (appel de méthode) pour consulter et modifier leur état;</li>
+<li>Paradigme le plus utilisé aujourd’hui;</li>
+<li>Design patterns: des solutions applicatives répondant à des problèmes connus;</li>
+<li>Exemples de langages : C++, C#, Java, PHP, Python, Smalltalk, TypeScript;</li>
+<li>Né dans les années 60-70 avec les langages Simula67, Smalltalk puis C++, Objective-C ensuite avec Java, PHP, Python, JavaScript, TypeScript;</li>
+<li>Un objet est une entité, du monde physique par exemple : personne, service qui a une structure interne et un comportement, il interagit avec les autres objets par des messages.</li>
+<li>La POO c’est : Modéliser ces objets et Définir ces propriétés (ou attributs), ses relations avec les autres objets composition, héritage, délégation, etc&hellip;) et définir son interface, i.e. l’ensemble des messages qu’on pourra lui appliquer.
+La modélisation pourra se faire via UML par exemple.</li>
+<li>Définir les «types»de ces objets Ces types sont appelées «classes»;</li>
+<li>Une classe définit des attributs: données de la structure interne de l’objet, son état; ses méthodes : une méthode étant une fonction définissant le comportement à la réception d’un message;</li>
+<li>La classe peut être vue comme le moule permettant la création d’un objet ou plusieurs: les instances ayant les mêmes attributs, mais potentiellement pas le même état, i.e. pas les mêmes valeurs d’attributs.</li>
+</ul>
+<h4 id="encapsulation">Encapsulation</h4>
+<p>Un objet s’appuie sur le principe d’encapsulation : regrouper des données et les fonctions qui les manipulent; il doit être considéré comme une «boîte noire» dont l’état interne doit rester intègre, cohérent pour maintenir cette intégrité, l’objet ne doit être manipulé par les autres objets qu’au travers de son «interface», i.e. ses méthodes publiques.
+Pour garantir l’intégrité, on peut «masquer» certains attributs et méthodes en modifiant leur niveau d’accessibilité : «private» ou «public» par défaut.
+Méthodes spéciales:</p>
+<ul>
+<li>le <em>constructeur</em> : est appelé automatiquement lors de la création de l’objet pour initialiser ses attributs;</li>
+<li>le <em>destructeur</em> / Finaliseur qui est appelé à la fin de vie de l’objet pour libérer des ressources détenues par l’objet;</li>
+<li>les <em>Accesseurs</em>:</li>
+<li><em>Getters</em> : permet de lire un attribut (virtuel ou pas) privé de l’objet;</li>
+<li><em>Setters</em> : permet de modifier un attribut privé de l’objet selon des contraintes d’intégrité;</li>
+</ul>
+<h4 id="héritage-généralisation">Héritage (généralisation)</h4>
+<p>Wikipedia: spécialisation qui permet d&rsquo;hériter dans la déclaration d’une nouvelle classe (appelée classe dérivée, classe fille, classe enfant ou sous -classe) des caractéristiques (propriétés et méthodes) de la déclaration d&rsquo;une autre classe (appelée classe de base, classe mère, classe parent ou super -classe)
+En déclarant une nouvelle classe B par héritage de la classe A, ajoutant de nouveaux membres, on peut alors dire que:</p>
+<ul>
+<li>A est une généralisation de B et B est une spécialisation de A;</li>
+<li>A est une super - classe de B et B est une sous - classe de A;</li>
+<li>A est la classe mère de B et B est une classe fille de A.</li>
+</ul>
+<p>Lorsqu&rsquo;une classe fille hérite d&rsquo;une classe mère, elle peut alors utiliser les caractéristiques de la classe mère. Pour invoquer une définition de la classe mère, utilisation de mot clé super.</p>
+<h4 id="polymorphisme-redéfinition-upcasting-et-surcharge">Polymorphisme, redéfinition, Upcasting et surcharge</h4>
+<ul>
+<li>Consiste à <em>redéfinir</em> une méthode pour affiner son comportement.</li>
+<li>L’<em>upcasting</em>, c’est voir un objet selon l’interface de la classe mère, mais en appelant les méthodes redéfinies: c&rsquo;est faire passer une classe fille pour sa classe mère.</li>
+<li><em>ad hoc</em> ou <em>surcharge</em>: écrire plusieurs méthodes de même nom renvoyant le même type de résultat, mais avec des arguments différents dans le cas de la conversion d&rsquo;argument ou de gestion de valeur par défaut par exemple.</li>
+</ul>
+<h4 id="classe-abstraite">Classe abstraite</h4>
+<p>Écrire un code «par défaut» dans une méthode, c’est prendre le risque qu’elle ne soit pas redéfinie par la classe fille et donc d’avoir une valeur erronée.</p>
+<ul>
+<li>Ne peut pas être instanciée.</li>
+<li>Forcer les classe filles à implémenter / redéfinir une méthode.</li>
+</ul>
+<h4 id="les-génériques">Les génériques</h4>
+<p><code>function defautSiNul &lt;T&gt; (x: T, defaut: T): T</code></p>
+<p>La fonction defautSiNul va fonctionner avec un type paramétré qu’on appellera T, dont on ne sait rien à la définition de la fonction. Ce type inconnu T sera celui des paramètres x et defaut ainsi que celui de retour. T sera défini, deviné, «inféré», pour chaque appel de la fonction grâce au type du 1er argument passé : si x est un number, alors defaut sera aussi un number et la valeur retournée par la fonction sera aussi number.</p>
+<ul>
+<li>Dans une fonction générique, tous les paramètres ne sont pas obligatoirement génériques;</li>
+<li>On aurait pu choisir une autre lettre que T: X, Y, Z, etc&hellip;</li>
+<li>Le type paramétré peut être intégré à la déclaration d’un tableau;</li>
+<li>On peut utiliser plusieurs types paramétrés;</li>
+</ul>
+<p><code>class NomClasse&lt;T&gt;</code></p>
+<ul>
+<li>Le type générique paramétré peut être utilisé pour définir le type des :</li>
+<li>attributs;</li>
+<li>paramètres de méthodes;</li>
+<li>résultat de méthodes;</li>
+<li>On peut indiquer de quel classe (abstraite) ou interface hérite T;</li>
+</ul>
+<p><code>&lt;T extends MaClasse&gt;</code></p>
+<p>La généricité est une forme de polymorphisme, le polymorphisme de type, dit aussi paramétrage de type : en effet, le type de donnée général (abstrait) apparaît comme un paramètre des algorithmes définis, avec la particularité que ce paramètre-là est un type.
+Elle consiste à définir des algorithmes identiques opérant sur des données de types différents.
+Un algorithme de tri d’objet est par exemple toujours le même; peu importe le type de données l’algorithme doit uniquement disposer d&rsquo;un itérateur sur les éléments - générique et/ou d&rsquo;une fonction de comparaison, générique aussi.
+Les algorithmes génériques sont ainsi très présents dans le domaine des collections.</p>
+<h4 id="patron-de-conception-design-pattern">Patron de conception «design pattern»</h4>
+<p>décrit une organisation de classes fréquemment utilisée pour résoudre un problème récurrent. Le patron de conception parle d&rsquo;instances, de rôles et de collaboration. Voir le livre «Design Patterns» écrit par le Gang of Four (GoF).
+Un pattern c&rsquo;est un nom, une description du problème à résoudre, une description de la solution, une illustration, un exemple.</p>
+<p>Orthogonalité du patron:
+«Chaque patron doit correspondre à une approche différente, qui ne répète pas les idées ou stratégies présentes dans d&rsquo;autres patrons»
+«Cette qualité permet au concepteur d&rsquo;analyser un problème et d&rsquo;en résoudre chaque aspect d&rsquo;une façon organisée, ainsi que de combiner les patrons pour construire une solution»</p>
+<p>Patrons de Conceptions issus du livre «Design Patterns: Elements of Reusable Software» paru en 1994 et co-écrit par le «Gang of Four» (GoF): Erich Gamma, Richard Helm, Ralph Johnson (en) et John Vlissides.
+Les patrons du GoF c&rsquo;est un catalogue de 23 patrons de 3 familles:</p>
+<ul>
+<li><em>Créateurs</em>: comment faire l&rsquo;instanciation et la configuration des classes et des objets;</li>
+<li><em>Structuraux</em>: comment organiser les classes d&rsquo;un programme dans une structure plus large (séparant l&rsquo;interface de l&rsquo;implémentation);</li>
+<li><em>Comportementaux</em>: ils définissent comment organiser les objets pour que ceux-ci collaborent (distribution des responsabilités) et expliquent le fonctionnement des algorithmes impliqué;</li>
+<li>exemples: Itérateur, Observeur, Factory, Builder, Singleton</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="color:#75715e">// Factory pattern
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">FabriqueAnimal</span> <span style="color:#f92672">{</span>
+
+Animal <span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>String typeAnimal<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> AnimalCreationException <span style="color:#f92672">{</span>
+  <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>typeAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;chat&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Chat<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span>
+  <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>typeAnimal<span style="color:#f92672">.</span><span style="color:#a6e22e">equals</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;chien&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Chien<span style="color:#f92672">();</span>
+  <span style="color:#f92672">}</span>
+  <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> AnimalCreationException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Impossible de créer un &#34;</span> <span style="color:#f92672">+</span> typeAnimal<span style="color:#f92672">);</span>
+  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Observer pattern
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Signal</span> <span style="color:#66d9ef">extends</span> Observable <span style="color:#f92672">{</span>
+
+  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setData</span><span style="color:#f92672">(</span><span style="color:#66d9ef">byte</span><span style="color:#f92672">[]</span> lbData<span style="color:#f92672">){</span>
+    setChanged<span style="color:#f92672">();</span> <span style="color:#75715e">// Positionne son indicateur de changement
+</span><span style="color:#75715e"></span>    notifyObservers<span style="color:#f92672">();</span> <span style="color:#75715e">// (1) notification
+</span><span style="color:#75715e"></span>  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+    Le panneau d<span style="color:#960050;background-color:#1e0010">&#39;</span>affichage qui implémente l<span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">java</span><span style="color:#f92672">.</span><span style="color:#a6e22e">util</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Observer</span> est créé<span style="color:#f92672">.</span> Avec une méthode d<span style="color:#960050;background-color:#1e0010">&#39;</span>initialisation <span style="color:#f92672">(</span>2<span style="color:#f92672">),</span> il lui est transmis le signal à <span style="color:#a6e22e">observer</span> <span style="color:#f92672">(</span>2<span style="color:#f92672">).</span> Lorsque le signal notifie une mise à jour<span style="color:#f92672">,</span> le panneau est <span style="color:#a6e22e">redessiné</span> <span style="color:#f92672">(</span>3<span style="color:#f92672">).</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JPanelSignal</span> <span style="color:#66d9ef">extends</span> JPanel <span style="color:#66d9ef">implements</span> Observer <span style="color:#f92672">{</span>
+
+  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">init</span><span style="color:#f92672">(</span>Signal lSigAObserver<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    lSigAObserver<span style="color:#f92672">.</span><span style="color:#a6e22e">addObserver</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">);</span> <span style="color:#75715e">// (2) ajout d&#39;observateur
+</span><span style="color:#75715e"></span>  <span style="color:#f92672">}</span>
+
+  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">update</span><span style="color:#f92672">(</span>Observable observable<span style="color:#f92672">,</span> Object objectConcerne<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    repaint<span style="color:#f92672">();</span>  <span style="color:#75715e">// (3) traitement de l&#39;observation
+</span><span style="color:#75715e"></span>  <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Java" data-lang="Java"><span style="color:#75715e">// From wikipedia
+</span><span style="color:#75715e">// La classe est finale, car un singleton n&#39;est pas censé avoir d&#39;héritier.
+</span><span style="color:#75715e"></span> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Singleton</span> <span style="color:#f92672">{</span>
+
+     <span style="color:#75715e">// L&#39;utilisation du mot clé volatile, en Java version 5 et supérieure,
+</span><span style="color:#75715e"></span>     <span style="color:#75715e">// permet d&#39;éviter le cas où &#34;Singleton.instance&#34; est non nul,
+</span><span style="color:#75715e"></span>     <span style="color:#75715e">// mais pas encore &#34;réellement&#34; instancié.
+</span><span style="color:#75715e"></span>     <span style="color:#75715e">// De Java version 1.2 à 1.4, il est possible d&#39;utiliser la classe ThreadLocal.
+</span><span style="color:#75715e"></span>     <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">volatile</span> Singleton instance <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+ 
+     <span style="color:#75715e">// D&#39;autres attributs, classiques et non &#34;static&#34;.
+</span><span style="color:#75715e"></span>     <span style="color:#66d9ef">private</span> String xxx<span style="color:#f92672">;</span>
+     <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">int</span> zzz<span style="color:#f92672">;</span>
+
+     <span style="color:#75715e">/**
+</span><span style="color:#75715e">      * Constructeur de l&#39;objet.
+</span><span style="color:#75715e">      */</span>
+     <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">Singleton</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+         <span style="color:#75715e">// La présence d&#39;un constructeur privé supprime le constructeur public par défaut.
+</span><span style="color:#75715e"></span>         <span style="color:#75715e">// De plus, seul le singleton peut s&#39;instancier lui-même.
+</span><span style="color:#75715e"></span>         <span style="color:#66d9ef">super</span><span style="color:#f92672">();</span>
+     <span style="color:#f92672">}</span>
+     
+     <span style="color:#75715e">/**
+</span><span style="color:#75715e">      * Méthode permettant de renvoyer une instance de la classe Singleton
+</span><span style="color:#75715e">      * @return Retourne l&#39;instance du singleton.
+</span><span style="color:#75715e">      */</span>
+     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">static</span> Singleton <span style="color:#a6e22e">getInstance</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+         <span style="color:#75715e">//Le &#34;Double-Checked Singleton&#34;/&#34;Singleton doublement vérifié&#34; permet 
+</span><span style="color:#75715e"></span>         <span style="color:#75715e">//d&#39;éviter un appel coûteux à synchronized, 
+</span><span style="color:#75715e"></span>         <span style="color:#75715e">//une fois que l&#39;instanciation est faite.
+</span><span style="color:#75715e"></span>         <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Singleton<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#75715e">// Le mot-clé synchronized sur ce bloc empêche toute instanciation
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// multiple même par différents &#34;threads&#34;.
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// Il est TRES important.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">synchronized</span><span style="color:#f92672">(</span>Singleton<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+              <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>Singleton<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                Singleton<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Singleton<span style="color:#f92672">();</span>
+              <span style="color:#f92672">}</span>
+            <span style="color:#f92672">}</span>
+         <span style="color:#f92672">}</span>
+         <span style="color:#66d9ef">return</span> Singleton<span style="color:#f92672">.</span><span style="color:#a6e22e">instance</span><span style="color:#f92672">;</span>
+     <span style="color:#f92672">}</span>
+
+     <span style="color:#75715e">// D&#39;autres méthodes classiques et non &#34;static&#34;.
+</span><span style="color:#75715e"></span>     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">faireXxx</span><span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+       <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">xxx</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bonjour&#34;</span><span style="color:#f92672">;</span>
+     <span style="color:#f92672">}</span>
+
+     <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">faireZzz</span><span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
+     <span style="color:#f92672">}</span>
+ <span style="color:#f92672">}</span>
+</code></pre></div><hr>
+<h2 id="programmation-déclarative">Programmation déclarative</h2>
+<ul>
+<li>Paradigme de programmation de type déclaratif qui consiste à déclarer les données du problème, puis à demander au programme («moteur») de le résoudre; Années 1930, Alonzo Church travaille sur les concepts de fonction d&rsquo;application : le Lambda calcul.</li>
+<li>Historique: 1954 Fortran (FORmula TRANslator), 1958 Lisp, 1975 Scheme, 1987 Caml, 1990 Haskell;</li>
+<li>Sous familles très différentes : descriptive, fonctionnelle, logique;</li>
+<li>Le calcul est l’évaluation de fonctions mathématique;</li>
+<li>Une méthode de développement par composition en fonction pure;</li>
+<li>Permet d’éviter les problèmes inhérents à:</li>
+<li>la mutation des données (mutable data);</li>
+<li>Les états partagés (shared state);</li>
+<li>Les effets de bords (side-effects);</li>
+</ul>
+<hr>
+<h2 id="programmation-descriptive">Programmation descriptive</h2>
+<ul>
+<li>Décrit des mises en forme d’objets graphiques</li>
+<li>C’est le moteur de rendu du navigateur qui va interpréter et afficher le résultat</li>
+<li>Exemples : HTML, xml</li>
+</ul>
+<hr>
+<h2 id="programmation-fonctionnelle">Programmation fonctionnelle</h2>
+<ul>
+<li>Un programme est une fonction qui considère le calcul du programme en tant qu’évaluation de fonctions au sens mathématique du terme</li>
+<li>Difficile à aborder pour les programmeurs impératifs, car façon de penser très différente</li>
+<li>Adopté par les langages récents (fonction lambda entre autres) et adapté aux problématiques exprimables sous forme de flux asynchrones;</li>
+<li>Exemples de langages : Haskell, Lisp, Rust, Scala, TypeScript</li>
+</ul>
+<h4 id="fonction-pure">Fonction pure</h4>
+<ul>
+<li>C’est l’unité de traitement de ce paradigme;</li>
+<li>Il s’agit de fonction pure, i.e. fonction au sens mathématique;</li>
+<li>Ne dépend QUE des arguments;</li>
+<li>Ne dépend PAS d’un état externe;</li>
+<li>N’a donc pas d’effets de bords, dû à un changement d’état;</li>
+<li>Donnera toujours le même résultat pour un paramètre donné;</li>
+</ul>
+<h4 id="transparence-référentielle">Transparence référentielle</h4>
+<ul>
+<li>renvoie toujours le même résultat pour un ensemble de paramètres d’entrée;</li>
+<li>n’appelle pas d’autres fonctions susceptibles de modifier un état et donc de créer un effet de bord;</li>
+<li>Décomposition d’un problème complexe en parties plus simples, plus facile à comprendre et à tester</li>
+<li>Optimisation de l’exécution grâce à un système de cache de résultat :</li>
+<li>Add(3) : mise en cache de la valeur 4 pour add avec 3 en paramètre</li>
+<li>Add(3) : inutile de faire l’appel : add 3 est en cache, retourne 4 immédiatement</li>
+<li>Parallélisation de l’exécution des fonctions car elle sont indépendantes les unes des autres et d’un contexte;</li>
+</ul>
+<h4 id="immutabilité">Immutabilité</h4>
+<ul>
+<li>Prérequis de la programmation fonctionnelle où les variables ne changent pas après affectation;</li>
+<li>Car la mutation d’un élément peut entraîner des effets de bord;</li>
+<li>Simplifie la gestion d’état de l’application en réduisant le nombre de bugs introduits avec une mutation;</li>
+</ul>
+<h4 id="assignation-de-fonction-en-typescript">Assignation de fonction en TypeScript</h4>
+<p>Les fonctions sont des objets. Elles peuvent être :</p>
+<ul>
+<li>Affectées à des variables;</li>
+<li>Passées en paramètre à une fonction;</li>
+<li>Retournées par une fonction;</li>
+</ul>
+<h5 id="fonction-lambda">Fonction Lambda</h5>
+<ul>
+<li>Fonction anonyme;</li>
+<li>Utilisée de manière ponctuelle;</li>
+<li>N’effectuant généralement qu’une seule opération;</li>
+<li>Par exemple: <code>let my_func = x =&gt; x * 2;</code></li>
+</ul>
+<h4 id="fonction-dordre-supérieur">Fonction d’ordre supérieur</h4>
+<ul>
+<li>Soit elle prend une ou plusieurs fonctions en paramètres;</li>
+<li>Soit elle renvoie une fonction;</li>
+<li>Générer des fonctions pures, avec un seul argument:</li>
+<li>Principe de «curryfication»;</li>
+<li>Permettra la composition de fonctions;</li>
+<li>Meilleure expressivité du code :</li>
+<li>met l’accent sur la tâche à accomplir : format_dollar;</li>
+<li>plutôt que sur la façon de l’accomplir : format_devise;</li>
+</ul>
+<h4 id="la-closure-ou-fermeture">La «closure» ou fermeture</h4>
+<ul>
+<li>Fonction qui utilise des variables définies dans la portée englobante;</li>
+<li>Elle se souvient de l’environnement dans lequel elle a été créée;</li>
+<li>Elle «capture son environnement»;</li>
+<li>Exemple suivant: name et separator sont dits fermés, d’où la closure;</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Typescript" data-lang="Typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">logger</span>(<span style="color:#a6e22e">name</span>) {
+    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">separator</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;: &#34;</span>;
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">message</span>){
+        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">separator</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">message</span>);
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">log</span>
+}
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">my_logger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">logger</span>(<span style="color:#e6db74">&#34;Typescript&#34;</span>);
+<span style="color:#a6e22e">my_logger</span>(<span style="color:#e6db74">&#34;J’ai capturé name et separator!&#34;</span>);
+
+<span style="color:#75715e">// Or -&gt;
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">separator</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">separator</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">message</span>);
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">colonLogger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">logger</span>(<span style="color:#e6db74">&#34;: &#34;</span>);
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">my_logger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">colonLogger</span>(<span style="color:#e6db74">&#34;Typescript&#34;</span>);
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">mes</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">my_logger</span>(<span style="color:#e6db74">&#34;coucou&#34;</span>);
+</code></pre></div><h4 id="la-curryfication">La curryfication</h4>
+<ul>
+<li>Transformation d’une fonction à plusieurs arguments en fonction à un seul argument qui retourne une fonction sur le reste des arguments;
+Pour:</li>
+<li>Créer une fonction pure;</li>
+<li>Permettre la réutilisabilité de code pour de nouvelles combinaisons et compositions;</li>
+<li>Grâce à la technique de closure, nous pouvons écrire une forme curryfiée;</li>
+<li>Exemple:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Typescript" data-lang="Typescript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">logger</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">message</span>){
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">separator</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;: &#34;</span>;
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">separator</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">message</span>);
+}
+
+<span style="color:#75715e">// To -&gt;
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">logger</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">separator</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">name</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">separator</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">message</span>);
+
+</code></pre></div><h4 id="lapplication-partielle">L’application partielle</h4>
+<ul>
+<li>La curryfication permet l’application partielle;</li>
+<li>L’application partielle permet d&rsquo;avoir une fonction réalisant uniquement le calcul demandé;</li>
+<li>Par exemple: <code>let colonLogger = logger(&quot;: &quot;);</code></li>
+</ul>
+<h4 id="la-récursion">La récursion</h4>
+<ul>
+<li>En programmation fonctionnelle, on privéligie la récursion aux instructions de boucle comme for et while;</li>
+<li>Pas d’état (compteur) à maintenir, donc pas d’effets de bords;</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Typescript" data-lang="Typescript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">fact</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">=&gt;</span> {
+<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">n</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">2</span>){
+<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span>;
+}
+<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">fact</span> (<span style="color:#a6e22e">n</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>);
+}
+</code></pre></div><h4 id="recherche-et-transformation-de-listes">Recherche et transformation de listes</h4>
+<ul>
+<li>Domaines où les boucles sont habituelles en langage impératif;</li>
+<li>En programmation fonctionnelle, privilégiez:</li>
+<li>filter() pour la recherche: list.filter(fonction_de_filtrage_booleenne) renvoie une liste filtrée;</li>
+<li>map() pour la transformation: liste_de_A.map(fonction_de_transformation_de_A_vers_B) renvoie une liste_de_B;</li>
+<li>reduce() Consiste à prendre un tableau, et à accumuler les éléments de celui-ci à l’aide d’une fonction associative; Le résultat est UNE valeur dont le type dépend de la fonction appliquée et de la valeur d’initialisation; Prend 2 paramètres: La fonction associative - dont les 2 premiers paramètres sont la valeur actuelle de l’accumulateur (vaut la valeur initiale à la 1ère itération) et la valeur du tableau de l’itération courante - qui renvoie la valeur de l’accumulateur de la prochaine itération et une valeur initiale. <code>let sum = numbers.reduce((accumulator, currentValue) =&gt; accumulator + currentValue, 0);</code></li>
+</ul>
+<hr>
+<h2 id="programmation-logique">Programmation logique</h2>
+<p>En Prolog, on énonce :</p>
+<ul>
+<li>Des faits;</li>
+<li>Des règles;</li>
+<li>Des questions;</li>
+</ul>
+<h4 id="programmer-en-prolog-cest-">Programmer en Prolog, c’est :</h4>
+<ul>
+<li>Mettre à jour la base de connaissance (BC);</li>
+<li>Introduire des nouveaux faits et des nouvelles règles;</li>
+<li>Exécuter un programme Prolog, c’est Charger la BC;</li>
+<li>Poser des questions;</li>
+</ul>
+<h4 id="applications">Applications:</h4>
+<ul>
+<li>Traitement du langage naturel;</li>
+<li>Écriture de grammaire (analyseur syntaxique);</li>
+<li>Calcul formel;</li>
+<li>Système expert;</li>
+<li>Base de données déductive;</li>
+<li>Intelligence artificielle;</li>
+</ul>
+<h4 id="faits">Faits</h4>
+<ul>
+<li>Pour Prolog, des faits = «des données»;</li>
+<li>On veut déclarer que:</li>
+<li>Sébastien est le père de Elena;</li>
+<li>Les objets : Sébastien, Elena;</li>
+<li>Une relation : père;</li>
+<li>fait: pere(sebastien, elena);</li>
+</ul>
+<h4 id="règles-">Règles :</h4>
+<ul>
+<li>Quand on a choisi un sens au fait, on s’y tient;</li>
+<li>L’ordre d’écriture des arguments est arbitraire mais il est choisi une fois pour toutes par le programmeur;</li>
+<li>Convention :verbe(sujet, complément);</li>
+</ul>
+<h4 id="faits--1ère-base-de-connaissance">Faits : 1ère base de connaissance</h4>
+<ul>
+<li>Tous les faits définissant un même prédicat sont regroupés en séquence dans l’ordre énoncé par l’utilisateur.</li>
+<li>Ils forment un paquet de faits;</li>
+<li>L’intérêt est calcul;</li>
+</ul>
+<h4 id="interrogations">Interrogations</h4>
+<ul>
+<li>Prolog connaît maintenant notre BC familiale : on peut l’interroger;</li>
+<li>Questions avec inconnues : «De qui Robert est le père ?»;</li>
+<li>Conjonction de questions (de buts) ;</li>
+<li>En Prolog «,» = «et» = conjonction;</li>
+<li>Prolog cherche dans le paquet pere, une solution à pere(Robert, X)</li>
+<li>S’il y a une solution, X est instancié, lié puis Prolog cherche dans le paquet mere une solution à mere(Y, X) avec X lié;</li>
+<li>Non déterminisme :</li>
+<li>Prolog donne toutes les solutions;</li>
+<li>Explosion combinatoire éventuelle</li>
+</ul>
+<h4 id="des-règles">Des règles</h4>
+<ul>
+<li>Par une règle, on exprime qu’un fait peut se déduire / dépend d’autres faits;</li>
+<li>Conclusion de la règle &lt;= hypothèse de la règle;</li>
+</ul>
+<h4 id="termes">Termes</h4>
+<ul>
+<li>les objets manipulés par Prolog sont appelés des terme;</li>
+<li>Constantes symboliques : apparaissent comme des noms écrits en minuscules;</li>
+<li>Variables : elles sont en majuscules, précisément la 1ère lettre est en majuscule;</li>
+<li>Constantes symboliques : apparaissent comme des noms écrits en minuscules;</li>
+<li>Variables : elles sont en majuscules, précisément la 1ère lettre est en majuscule;</li>
+</ul>
+ 
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://code.graoully.fr/tags/dev">dev</a></span><span class="tag"><a href="https://code.graoully.fr/tags/paradigme">paradigme</a></span><span class="tag"><a href="https://code.graoully.fr/tags/programmation">programmation</a></span><span class="tag"><a href="https://code.graoully.fr/tags/developpement">developpement</a></span>
+  				</p>
+
+             
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+             
+        </div>
+    </div> 
+</footer>
+<script type="text/javascript">
+    $(function(){
+
+  window.sr = ScrollReveal();
+
+  if ($(window).width() < 768) {
+
+    if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+        $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+    }
+
+    sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+  } else {
+    
+    sr.reveal('.js--fadeInLeft', {
+        origin: 'left',
+        distance: '300px',
+          easing: 'ease-in-out',
+        duration: 800,
+      });
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+  }
+  
+  sr.reveal('.js--fadeInLeft', {
+        origin: 'left',
+        distance: '300px',
+          easing: 'ease-in-out',
+        duration: 800,
+      });
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+
+});
+
+</script>
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

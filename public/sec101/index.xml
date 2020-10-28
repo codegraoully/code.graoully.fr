@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SEC101s on Code Graoully</title>
+    <link>http://example.org/sec101/</link>
+    <description>Recent content in SEC101s on Code Graoully</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 27 Oct 2020 09:47:20 +0100</lastBuildDate>
+    
+	<atom:link href="http://example.org/sec101/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ACID et DICT</title>
+      <link>http://example.org/sec101/cybersecu_acid_pictan/</link>
+      <pubDate>Tue, 27 Oct 2020 09:47:20 +0100</pubDate>
+      
+      <guid>http://example.org/sec101/cybersecu_acid_pictan/</guid>
+      <description>ACID PICT-AN ACID  A: Authentification C: Confidentialité I: Intégrité D: Disponibilité  DICT  D: Disponibilité des données I: Intégrité C: Coonfidentialité T: Tracabilité A: Authenticité N: Non Répugnation  </description>
+    </item>
+    
+  </channel>
+</rss>

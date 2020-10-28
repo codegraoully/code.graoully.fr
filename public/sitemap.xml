@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://code.graoully.fr/</loc>
+    <lastmod>2020-10-28T11:28:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/security/</loc>
+    <lastmod>2020-10-28T11:28:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/conf%C3%A9rence/</loc>
+    <lastmod>2020-10-28T11:28:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/cyber/</loc>
+    <lastmod>2020-10-28T11:28:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/security/sec101_synthese_conference_usenix_enigma_2016/</loc>
+    <lastmod>2020-10-28T11:28:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/s%C3%A9curit%C3%A9/</loc>
+    <lastmod>2020-10-28T11:28:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/</loc>
+    <lastmod>2020-10-28T11:28:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/analyse/</loc>
+    <lastmod>2020-10-28T11:25:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/risque/</loc>
+    <lastmod>2020-10-28T11:25:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/security/sec101_analyse_risque/</loc>
+    <lastmod>2020-10-28T11:25:18+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/security/acid_pictan/</loc>
+    <lastmod>2020-10-27T09:47:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/security/</loc>
+    <lastmod>2020-10-27T09:47:20+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/about/</loc>
+    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/network/</loc>
+    <lastmod>2020-04-01T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/linux/</loc>
+    <lastmod>2020-04-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/proxy/</loc>
+    <lastmod>2020-04-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/network/squid/</loc>
+    <lastmod>2020-04-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/operating_system/</loc>
+    <lastmod>2019-12-01T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/os/</loc>
+    <lastmod>2019-12-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/syst%C3%A8me/</loc>
+    <lastmod>2019-12-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/operating_system/utc502_generalites_systeme/</loc>
+    <lastmod>2019-12-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/developpement/</loc>
+    <lastmod>2019-11-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/dev/</loc>
+    <lastmod>2019-11-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/developpement/</loc>
+    <lastmod>2019-11-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/paradigme/</loc>
+    <lastmod>2019-11-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/developpement/utc503_generalites_developpement/</loc>
+    <lastmod>2019-11-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/programmation/</loc>
+    <lastmod>2019-11-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/network/utc505_generalites_reseau/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/timeline/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://code.graoully.fr/tags/gnu/linux/</loc>
+  </url>
+  
+</urlset>

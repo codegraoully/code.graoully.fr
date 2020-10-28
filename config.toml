@@ -1,0 +1,41 @@
+baseURL = "https://code.graoully.fr/"
+languageCode = "fr-fr"
+title = "code@graoully"
+theme = "timeline"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "timeline"
+    name = "Timeline"
+    title = "timeline"
+    url = "timeline"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "developpement"
+    name = "Dev"
+    title = "Dev"
+    url = "developpement"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "system"
+    name = "Sys"
+    title = "Sys"
+    url = "operating_system"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "security"
+    name = "Secu"
+    title = "secu"
+    url = "security"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "about"
+    url = "about"
+    weight = 100

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>proxy on code@graoully</title>
+    <link>https://code.graoully.fr/tags/proxy/</link>
+    <description>Recent content in proxy on code@graoully</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Wed, 01 Apr 2020 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://code.graoully.fr/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Squid et squid guard</title>
+      <link>https://code.graoully.fr/network/squid/</link>
+      <pubDate>Wed, 01 Apr 2020 09:00:00 +0000</pubDate>
+      
+      <guid>https://code.graoully.fr/network/squid/</guid>
+      <description>sudo yum install squidGuard
+cd /var/squidGuard rm blacklists.tar.gz wget -c ftp://ftp.ut-capitole.fr/blacklist/blacklists.tar.gz tar xvzf blacklists.tar.gz cd blacklists /etc/squid/squid.conf
+# SquidGuard url_rewrite_program /usr/bin/squidGuard url_rewrite_children 8 sudo chown -R squid:squid /var/squidGuard sudo chown -R squid:squid /var/log/squidGuard</description>
+    </item>
+    
+  </channel>
+</rss>

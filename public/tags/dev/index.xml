@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dev on code@graoully</title>
+    <link>https://code.graoully.fr/tags/dev/</link>
+    <description>Recent content in dev on code@graoully</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 01 Nov 2019 09:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://code.graoully.fr/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paradigme de programmation</title>
+      <link>https://code.graoully.fr/developpement/utc503_generalites_developpement/</link>
+      <pubDate>Fri, 01 Nov 2019 09:00:00 +0000</pubDate>
+      
+      <guid>https://code.graoully.fr/developpement/utc503_generalites_developpement/</guid>
+      <description>Paradigme (modèle) de programmation  La programmation impérative  la séquence d&amp;rsquo;instructions L&amp;rsquo;assignation ou affectation L&amp;rsquo;instruction conditionnelle La boucle Les branchements   Programmation orientée objet  Encapsulation Héritage (généralisation) Polymorphisme, redéfinition, Upcasting et surcharge Classe abstraite Les génériques Patron de conception «design pattern»   Programmation déclarative Programmation descriptive Programmation fonctionnelle  Fonction pure Transparence référentielle Immutabilité Assignation de fonction en TypeScript  Fonction Lambda   Fonction d’ordre supérieur La «closure» ou fermeture La curryfication L’application partielle La récursion Recherche et transformation de listes   Programmation logique  Programmer en Prolog, c’est : Applications: Faits Règles : Faits : 1ère base de connaissance Interrogations Des règles Termes      Un langage est une notation conventionnelle destinée à formuler des algorithmes: Il s&amp;rsquo;agit d&amp;rsquo;un vocabulaire et de règles de grammaire.</description>
+    </item>
+    
+  </channel>
+</rss>
