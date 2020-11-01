@@ -27,6 +27,13 @@ theme = "timeline"
     weight = 30
 
   [[menu.main]]
+    identifier = "project_management"
+    name = "Projet"
+    title = "Projet"
+    url = "project_management"
+    weight = 40
+
+  [[menu.main]]
     identifier = "security"
     name = "Secu"
     title = "secu"
