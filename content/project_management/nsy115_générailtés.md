@@ -12,24 +12,28 @@ tags:
 
 Un projet c'est:
 
-- C'est un processus unique: selon les spécificités du contexte interne ou externe, du client, de l'équipe projet, de la version du progiciel à implanter etc...;
+- C'est un processus **unique**: selon les spécificités du contexte interne ou externe, du client, de l'équipe projet, de la version du progiciel à implanter etc...;
 - Une novation plus ou moins importante;
 - Le but est d'obtenir un résultat durable;
 - C'est un ensemble d'activités coordonnées;
-- Un temps limité avec un début et une fin;
+- Un **temps limité** avec un **début** et une **fin**;
 - Des contraintes: de délais, de coûts et de ressources;
-- Une faisabilité: s'il est réalisable (maquette, sondage etc...) -> signature du contrat
-- Une notion d'apprentissage;
-- Une notion de risque;
+- Une **faisabilité**: s'il est réalisable (maquette, sondage etc...) -> signature du contrat
+- Une notion d'**apprentissage**;
+- Une notion de **risque**;
 
 La structure est différente d'une structure opération ( Chîne de montage par exemple )
 
 - Double autorité;
 - Conflit féconds en idées;
 
+Différence entre une activité en mode projet et une activité en mode opération (Chîne de production par exemple).
+
 ## Management de projet
 
-Regroupe les points suivants
+« des organismes structurent leur organisation et adaptent leurs règles de fonctionnement à partir et autour des projets à réaliser. » (AFNOR – X50-115).
+
+organisation verticale et hiérarchique à une organisation transversale: organisation matricielle.
 
 ### La gestion de projet
 
@@ -62,6 +66,8 @@ en œuvre un projet. Il s’agit des aspects stratégiques, politiques organisat
 
 ## Définitions
 
+**PMI PMBOK** :  Project Management Institute, Project Management Body of Knowledge: méthode de gestion de projet créer par l'organisation PMI.
+
 **Contrat** : convention entre deux ou plusieurs parties ayant pour but d’engendrer une obligation
 d’une ou plusieurs d'entre elles envers une ou plusieurs autres (AFNOR norme X50-115)
 
@@ -76,7 +82,7 @@ obtenir des avantages et un contrôle qu’on ne pourrait pas obtenir en les gé
 **Cycle de vie** : Organisation logique des activités qui jalonnent la vie d’un projet, depuis l’identification du
 besoin jusqu’à son obsolescence ou son arrêt d’utilisation (AFNOR)
 
-**Jalon**
+**Jalon** :
 
 - Point ou événement significatif d’un projet (PMI PMBOK)
 - Repère prédéterminé et significatif dans le cours du projet (AFNOR X 50-115)
@@ -94,7 +100,19 @@ efficacité à atteindre des objectifs définis (ISO 9000)
 exhaustive l’ensemble des tâches d’un projet qui sont traitées en gestion de projet par l’équipe de projet,
 afin de maîtriser les coûts, délais et performances du projet (AFNOR X 50-115)
 
-## MOA et MOE
+## Les Parties prenantes
+
+- Assistant MOA;
+- MOA;
+- MOE;
+- Sous traitant;
+- Chef de projet;
+- Services interne et externe concerné par le projet;
+
+### MOA et MOE
+
+Le maître d'ouvrage : le client;
+Le maître d'oeuvre: le fournisseur;
 
 ![alt text](./images/MOA_MOE.png "MOA et MOE")
 
@@ -111,6 +129,28 @@ Prix maintenu sur la durée du marché|Contrôle des dépenses exercées par le 
 Renégociation possible avec accord du client si les clauses|Paiement sur justificatifs - Dépassement autorisé si justifié
 Produit récurrent|Produit nouveau
 Technique maîtrisée|Modèle unique
+
+## Chef de projet
+
+Il est en interaction avec:
+
+- Son service achat, formation, qualité, gestion;
+- Les etreprises sous traitantes;
+- Les entité de l'entreprise clientes;
+
+Il doit posseder les qualitées suivantes:
+
+- Leadership;
+- performant dans l’application de ses connaissances;
+
+Il a pour rôles:
+
+- Atteinte de l’objectif du projet;
+- Réactivité vis à vis du client;
+- Faire circuler l’information;
+- Planifie et tient les revues;
+
+Différent de Responsable fonctionnel ou Responsables des opérations;
 
 ## Les entreprises du numérique
 
